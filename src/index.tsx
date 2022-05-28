@@ -1,15 +1,28 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import './index.css'
+import App from './components/App'
+import reportWebVitals from './reportWebVitals'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Card from './components/card/Card'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/card" element={<Card 
+          src="https://placehold.jp/640x360.png" 
+          width={500}
+          height={400}
+          title='hello'
+          content='react-sandboxreact-sandboxreact-sandboxreact-sandboxreact-sandboxreact-sandboxreact-sandboxreact-sandbox'
+          date='2022/05/28' />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
