@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Card from './components/card/Card'
 import Carousel from './components/carousel/Carousel'
+import ImageExplain from './components/ImageExplain/ImageExplain';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -25,6 +26,7 @@ root.render(
             content='react-sandboxreact-sandboxreact-sandboxreact-sandboxreact-sandboxreact-sandboxreact-sandboxreact-sandboxreact-sandboxreact-sandboxreact-sandboxreact-sandboxreact-sandboxreact-sandboxreact-sandboxreact-sandboxreact-sandboxreact-sandboxreact-sandboxreact-sandboxreact-sandboxreact-sandboxreact-sandboxreact-sandboxreact-sandboxreact-sandboxreact-sandboxreact-sandboxreact-sandboxreact-sandboxreact-sandboxreact-sandbox'
             date='2022/05/28' />} />
         <Route path="/carousel" element={<Carousel />} />
+        <Route path="/image-explain" element={<ImageExplain />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
